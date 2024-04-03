@@ -105,13 +105,13 @@ struct DetailView: View {
             if let instructions = viewModel.meal?.instructions, !instructions.isEmpty {
                 Text("Recipe:")
                     .font(.headline)
-                    .foregroundColor(.primary) // or use your custom heading color
+                    .foregroundColor(.primary) 
                     .bold()
                     .padding(.vertical, 2)
 
                 Text(instructions)
                     .padding([.top, .bottom])
-                    .background(recipeBackground) // Use the computed background color
+                    .background(recipeBackground) 
                     .cornerRadius(10)
                     .fixedSize(horizontal: false, vertical: true)
             }
